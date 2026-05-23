@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Neelima Gatta | Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI',Arial,sans-serif;color:#222;background:#fff;}
+nav{position:fixed;top:0;left:0;width:100%;background:#1F4E79;z-index:999;padding:14px 40px;display:flex;justify-content:space-between;align-items:center;}
+nav .logo{color:#fff;font-size:20px;font-weight:700;}
+nav ul{list-style:none;display:flex;gap:28px;}
+nav ul li a{color:#cce0f5;text-decoration:none;font-size:14px;}
+nav ul li a:hover{color:#fff;}
+section{padding:70px 10% 50px;}
+.hero{min-height:100vh;background:#1F4E79;display:flex;align-items:center;padding-top:70px;padding-bottom:0;}
+.hero-content{color:#fff;}
+.hero-content h1{font-size:48px;font-weight:700;margin-bottom:10px;}
+.hero-content h2{font-size:22px;font-weight:400;color:#cce0f5;margin-bottom:18px;}
+.hero-content p{font-size:16px;color:#b3d4f0;max-width:550px;line-height:1.7;margin-bottom:32px;}
+.btn{display:inline-block;padding:12px 28px;border-radius:6px;font-size:15px;font-weight:600;text-decoration:none;margin-right:12px;cursor:pointer;border:none;}
+.btn-primary{background:#fff;color:#1F4E79;}
+.btn-outline{background:transparent;color:#fff;border:2px solid #fff;}
+.section-title{font-size:30px;font-weight:700;color:#1F4E79;margin-bottom:8px;}
+.section-line{width:50px;height:4px;background:#2E75B6;border-radius:2px;margin-bottom:36px;}
+.about{background:#f8fbff;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
+.about-text p{font-size:15px;line-height:1.8;color:#444;margin-bottom:14px;}
+.info-item{display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:14px;color:#555;}
+.info-item span.label{font-weight:600;color:#1F4E79;min-width:80px;}
+.skills{background:#fff;}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:16px;}
+.skill-card{background:#f0f6ff;border:1px solid #cde;border-radius:10px;padding:16px 12px;text-align:center;font-size:13px;font-weight:600;color:#1F4E79;}
+.projects{background:#f8fbff;}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;}
+.project-card{background:#fff;border:1px solid #dde8f8;border-radius:12px;padding:24px;}
+.project-tag{display:inline-block;background:#e0eeff;color:#1F4E79;font-size:11px;padding:3px 10px;border-radius:20px;margin-right:6px;margin-bottom:8px;font-weight:600;}
+.project-card h3{font-size:17px;color:#1F4E79;margin-bottom:8px;}
+.project-card p{font-size:13px;color:#555;line-height:1.7;}
+.experience{background:#fff;}
+.exp-card{border-left:4px solid #2E75B6;padding:16px 24px;margin-bottom:20px;background:#f8fbff;border-radius:0 10px 10px 0;}
+.exp-card h3{font-size:17px;font-weight:700;color:#1F4E79;}
+.exp-card .company{font-size:14px;color:#2E75B6;font-weight:600;margin:4px 0;}
+.exp-card .period{font-size:13px;color:#888;margin-bottom:10px;}
+.exp-card ul{padding-left:18px;}
+.exp-card ul li{font-size:14px;color:#444;margin-bottom:5px;line-height:1.6;}
+.certifications{background:#f8fbff;}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;}
+.cert-card{background:#fff;border:1px solid #dde8f8;border-radius:10px;padding:16px;display:flex;align-items:center;gap:14px;}
+.cert-icon{width:42px;height:42px;border-radius:8px;background:#e0eeff;display:flex;align-items:center;justify-content:center;color:#1F4E79;font-size:20px;flex-shrink:0;}
+.cert-card p{font-size:13px;font-weight:600;color:#1F4E79;}
+.cert-card span{font-size:12px;color:#888;}
+.contact{background:#1F4E79;color:#fff;padding:70px 10% 50px;}
+.contact .section-title{color:#fff;}
+.contact .section-line{background:#cce0f5;}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+.contact-item{display:flex;align-items:center;gap:14px;margin-bottom:20px;}
+.contact-item .icon{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.contact-item p{font-size:13px;color:#cce0f5;margin-bottom:2px;}
+.contact-item a{color:#fff;text-decoration:none;font-weight:600;font-size:14px;}
+footer{background:#163a5c;color:#aac4e0;text-align:center;padding:18px;font-size:13px;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">NG</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Neelima Gatta</h1>
+    <h2>Frontend Developer &amp; UI/UX Designer</h2>
+    <p>Final-year CSE student passionate about building beautiful, functional web experiences. Experienced in HTML, CSS, JavaScript, Figma, and Python-based applications.</p>
+    <a href="#projects" class="btn btn-primary">View My Work</a>
+    <a href="#contact" class="btn btn-outline">Contact Me</a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="section-title">About Me</div>
+  <div class="section-line"></div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I'm a final-year Computer Science Engineering student at Gayatri Vidya Parishad College of Engineering, Visakhapatnam with a CGPA of 9.01.</p>
+      <p>I have hands-on experience in front-end web development and UI/UX design through internships at Tech Mahindra and AICTE-ZScaler. I love building things that are both beautiful and functional.</p>
+      <p>I'm actively looking for entry-level opportunities where I can apply my technical and creative skills.</p>
+    </div>
+    <div>
+      <div class="info-item"><span class="label">Degree</span> B.Tech – CSE (2023–2026)</div>
+      <div class="info-item"><span class="label">CGPA</span> 9.01</div>
+      <div class="info-item"><span class="label">College</span> GVP College of Engineering</div>
+      <div class="info-item"><span class="label">Location</span> Visakhapatnam, AP</div>
+      <div class="info-item"><span class="label">Email</span> neelimagatta@gmail.com</div>
+      <div class="info-item"><span class="label">Phone</span> +91-9553661347</div>
+    </div>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <div class="section-title">Technical Skills</div>
+  <div class="section-line"></div>
+  <div class="skills-grid">
+    <div class="skill-card">🌐<br/>HTML5</div>
+    <div class="skill-card">🎨<br/>CSS3</div>
+    <div class="skill-card">🟨<br/>JavaScript</div>
+    <div class="skill-card">🐍<br/>Python</div>
+    <div class="skill-card">🗄️<br/>SQL</div>
+    <div class="skill-card">✏️<br/>Figma</div>
+    <div class="skill-card">🐙<br/>GitHub</div>
+    <div class="skill-card">☕<br/>Java</div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="section-title">Projects</div>
+  <div class="section-line"></div>
+  <div class="projects-grid">
+    <div class="project-card">
+      <span class="project-tag">Python</span><span class="project-tag">OCR</span><span class="project-tag">NLP</span>
+      <h3>AI Medical Crowdfunding Platform</h3>
+      <p>Web-based medical crowdfunding platform with AI-powered document verification using OCR and NLP. Includes fraud detection using rule-based methods.</p>
+    </div>
+    <div class="project-card">
+      <span class="project-tag">HTML</span><span class="project-tag">CSS</span><span class="project-tag">JavaScript</span>
+      <h3>Music Player Web App</h3>
+      <p>Responsive music player with playback controls and progress tracking. Built with pure JavaScript using event listeners for dynamic interactions.</p>
+    </div>
+    <div class="project-card">
+      <span class="project-tag">Figma</span><span class="project-tag">UI/UX</span>
+      <h3>Snapchat UI/UX Design</h3>
+      <p>Snapchat-inspired mobile UI prototype with chat, stories, and login screens. Focused on usability, visual consistency, and responsive mobile layouts.</p>
+    </div>
+  </div>
+</section>
+
+<section class="experience" id="experience">
+  <div class="section-title">Experience</div>
+  <div class="section-line"></div>
+  <div class="exp-card">
+    <h3>UI/UX Intern</h3>
+    <div class="company">Tech Mahindra, Visakhapatnam</div>
+    <div class="period">Jul 2022 – Jan 2023</div>
+    <ul>
+      <li>Designed UI components and responsive web pages using HTML, CSS, and Figma</li>
+      <li>Created wireframes and design assets for mobile and web interfaces</li>
+    </ul>
+  </div>
+  <div class="exp-card">
+    <h3>Zero Trust Cloud Security Intern</h3>
+    <div class="company">AICTE – ZScaler (Online)</div>
+    <div class="period">May 2025 – Jun 2025</div>
+    <ul>
+      <li>Developed a URL-based phishing detection system using Python and Streamlit</li>
+      <li>Applied heuristic checks and Google Safe Browsing API for phishing detection</li>
+    </ul>
+  </div>
+</section>
+
+<section class="certifications" id="certifications">
+  <div class="section-title">Certifications</div>
+  <div class="section-line"></div>
+  <div class="cert-grid">
+    <div class="cert-card"><div class="cert-icon">🏅</div><div><p>Fundamentals of C++</p><span>EdX – 2024</span></div></div>
+    <div class="cert-card"><div class="cert-icon">🏅</div><div><p>HTML &amp; CSS</p><span>Infosys Springboard – 2024</span></div></div>
+    <div class="cert-card"><div class="cert-icon">🏅</div><div><p>Intro to Networks</p><span>CCNA – 2025</span></div></div>
+    <div class="cert-card"><div class="cert-icon">🏅</div><div><p>Basic SQL</p><span>HackerRank – 2025</span></div></div>
+    <div class="cert-card"><div class="cert-icon">🏆</div><div><p>82nd Rank – ECET</p><span>Achievement</span></div></div>
+    <div class="cert-card"><div class="cert-icon">⭐</div><div><p>School Pupil Leader</p><span>Leadership</span></div></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-title">Contact Me</div>
+  <div class="section-line"></div>
+  <div class="contact-grid">
+    <div>
+      <div class="contact-item"><div class="icon">📧</div><div><p>Email</p><a href="mailto:neelimagatta@gmail.com">neelimagatta@gmail.com</a></div></div>
+      <div class="contact-item"><div class="icon">📱</div><div><p>Phone</p><a href="tel:+919553661347">+91-9553661347</a></div></div>
+      <div class="contact-item"><div class="icon">💼</div><div><p>LinkedIn</p><a href="https://linkedin.com/in/neelima-gatta-409692291" target="_blank">linkedin.com/in/neelima-gatta</a></div></div>
+    </div>
+    <div>
+      <p style="color:#cce0f5;font-size:15px;line-height:1.9;">I'm currently looking for entry-level opportunities in frontend development and UI/UX design. Feel free to reach out — I'd love to connect!</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Designed &amp; Built by Neelima Gatta &copy; 2025</p>
+</footer>
+
+</body>
+</html>
